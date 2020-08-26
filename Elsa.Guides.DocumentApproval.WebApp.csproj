@@ -5,8 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\core\Elsa\Elsa.csproj" />
-      <ProjectReference Include="..\..\dashboard\Elsa.Dashboard\Elsa.Dashboard.csproj" />
+      <PackageReference Include="Elsa" Version="1.2.2.29" />
     </ItemGroup>
 
 </Project>

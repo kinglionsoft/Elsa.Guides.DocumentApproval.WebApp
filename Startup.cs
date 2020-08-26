@@ -28,13 +28,8 @@ namespace Elsa.Guides.DocumentApproval.WebApp
                 .AddElsa()
                 .AddConsoleActivities()
                 .AddHttpActivities(options => options.Bind(Configuration.GetSection("Http")))
-                .AddEmailActivities(options => options.Bind(Configuration.GetSection("Smtp")))
                 .AddTimerActivities(options => options.Bind(Configuration.GetSection("BackgroundRunner")))
-                .AddElsaDashboard()
                 .AddWorkflow<DocumentApprovalWorkflow>();
-
-            //services.AddMvc()
-            //    .AddApplicationPart(typeof(DashboardServiceCollectionExtensions).Assembly);
         }
 
         public void Configure(IApplicationBuilder app)
