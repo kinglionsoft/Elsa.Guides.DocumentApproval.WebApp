@@ -23,7 +23,9 @@ namespace Elsa.Guides.DocumentApproval.WebApp
                 .AddConsoleActivities()
                 .AddHttpActivities(options => options.Bind(Configuration.GetSection("Http")))
                 .AddTimerActivities(options => options.Bind(Configuration.GetSection("BackgroundRunner")))
-                .AddWorkflow<DocumentApprovalWorkflow>();
+                .AddWorkflow<DocumentApprovalWorkflow>()
+                //.AddElsaDashboard()
+                ;
         }
 
         public void Configure(IApplicationBuilder app)

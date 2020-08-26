@@ -145,7 +145,7 @@ namespace Elsa.Guides.DocumentApproval.WebApp
                     }
                 )
                 .Join(x => x.Mode = Join.JoinMode.WaitAll, name: "JoinJackLucy")
-                .Then<WriteLine>(x => x.TextExpression = new JavaScriptExpression<string>("`Approved: ${Approved}`"))
+                .Then<WriteLine>(x => x.TextExpression = new JavaScriptExpression<string>("`Approved: ${Approved}`"), name: "AfterJoinJackLucy")
                 .Then<IfElse>(
                     x => x.ConditionExpression = new JavaScriptExpression<bool>("Approved == 0"),
                     ifElse =>
