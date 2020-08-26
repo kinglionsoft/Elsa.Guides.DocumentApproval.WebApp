@@ -1,13 +1,7 @@
 using Elsa.Activities.Console.Extensions;
-using Elsa.Activities.Email.Extensions;
 using Elsa.Activities.Http.Extensions;
 using Elsa.Activities.Timers.Extensions;
-using Elsa.Dashboard.Extensions;
-using Elsa.Extensions;
-using Elsa.Services;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
